@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blossom WeekOne Task")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b9de723b827ffd3d3e3ce35f4951d53b254bc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blossom WeekOne Task")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blossom WeekOne Task")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

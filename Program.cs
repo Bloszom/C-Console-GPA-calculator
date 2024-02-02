@@ -13,18 +13,6 @@ namespace Blossom_WeekOne_Task
             Console.WriteLine("Please enter your registered Number of courses: ");
             int registeredNumberOfCourses = int.Parse(Console.ReadLine());
 
-/*
-            string grade;
-            int gradeUnit;
-            string remark;
-            int weightPt;
-            double Gpa;
-            int TotalGradeUnit = 0;
-            int TotalweightPt = 0;
-            int totalunitpass = 0;
-            int totalCourseUnit = 0;*/
-
-
              double StudentGpa;
              string studentGrade;
              string studentRemark;
@@ -46,48 +34,31 @@ namespace Blossom_WeekOne_Task
                 Console.Write($" Enter Course Score: ");
                 int courseScore = int.Parse(Console.ReadLine());
 
-                if (courseScore >= 70 && courseScore <= 100)
-                {
-                    studentGrade = "A";
-                    studentGradeUnit = 5;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Excellent";
-                }
-                else if (courseScore >= 60 && courseScore <= 69)
-                {
-                    studentGrade = "B";
-                    studentGradeUnit = 4;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Very-Good";
-                }
-                else if (courseScore >= 50 && courseScore <= 59)
-                {
-                    studentGrade = "C";
-                    studentGradeUnit = 3;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Good";
-                }
-                else if (courseScore >= 40 && courseScore <= 49)
-                {
-                    studentGrade = "D";
-                    studentGradeUnit = 2;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Fair";
-                }else if (courseScore >= 60 && courseScore <= 69)
-                {
-                    studentGrade = "E";
-                    studentGradeUnit = 1;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Pass";
-                }else {
-                    studentGrade = "F";
-                    studentGradeUnit = 0;
-                    studentWeightPt = courseUnit * studentGradeUnit;
-                    studentRemark = "Fail";
-                }
+                studentGrade = (courseScore >= 70 && courseScore <= 100) ? "A" :
+                                (courseScore >= 60 && courseScore <= 69) ? "B" :
+                                (courseScore >= 50 && courseScore <= 59) ? "C" :
+                                (courseScore >= 40 && courseScore <= 49) ? "D" :
+                                (courseScore >= 30 && courseScore <= 39) ? "E" : "F";
+
+                studentGradeUnit = (courseScore >= 70 && courseScore <= 100) ? 5 :
+                                   (courseScore >= 60 && courseScore <= 69) ? 4 :
+                                   (courseScore >= 50 && courseScore <= 59) ? 3 :
+                                   (courseScore >= 40 && courseScore <= 49) ? 2 :
+                                   (courseScore >= 30 && courseScore <= 39) ? 1 : 0;
+
+                studentRemark = (courseScore >= 70 && courseScore <= 100) ? "Excellent" :
+                               (courseScore >= 60 && courseScore <= 69) ? "Very-Good" :
+                               (courseScore >= 50 && courseScore <= 59) ? "Good" :
+                               (courseScore >= 40 && courseScore <= 49) ? "Fair" :
+                               (courseScore >= 30 && courseScore <= 39) ? "Pass" : "Fail";
+
+                studentWeightPt = courseUnit * studentGradeUnit;
+
+               
 
             }
 
         }
     }
+
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\Blossom WeekOne Task\\Blossom WeekOne Task.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\C-Console-GPA-calculator\\Blossom WeekOne Task.csproj",
       "projectName": "Blossom WeekOne Task",
-      "projectPath": "C:\\Users\\HP\\Desktop\\Blossom WeekOne Task\\Blossom WeekOne Task.csproj",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\C-Console-GPA-calculator\\Blossom WeekOne Task.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\Blossom WeekOne Task\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\C-Console-GPA-calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
