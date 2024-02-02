@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\Blossom WeekOne Task\bin\Debug\net8.0\Blossom WeekOne Task.exe
+C:\Users\HP\Desktop\Blossom WeekOne Task\bin\Debug\net8.0\Blossom WeekOne Task.deps.json
+C:\Users\HP\Desktop\Blossom WeekOne Task\bin\Debug\net8.0\Blossom WeekOne Task.runtimeconfig.json
+C:\Users\HP\Desktop\Blossom WeekOne Task\bin\Debug\net8.0\Blossom WeekOne Task.dll
+C:\Users\HP\Desktop\Blossom WeekOne Task\bin\Debug\net8.0\Blossom WeekOne Task.pdb
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.AssemblyInfo.cs
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.dll
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\refint\Blossom WeekOne Task.dll
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.pdb
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\Blossom WeekOne Task.genruntimeconfig.cache
+C:\Users\HP\Desktop\Blossom WeekOne Task\obj\Debug\net8.0\ref\Blossom WeekOne Task.dll
