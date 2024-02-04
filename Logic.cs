@@ -1,15 +1,15 @@
-﻿using System.Diagnostics;
-using System.Diagnostics.Metrics;
-using System.Reflection;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Blossom_WeekOne_Task
 {
-    internal class Program
+    public class Logic
     {
-        static void Main(string[] args)
+        public static void LogicMethod()
         {
-            
             string studentGrade;
             string studentRemark;
             int studentGradeUnit;
@@ -35,7 +35,7 @@ namespace Blossom_WeekOne_Task
                 Console.Write($"Enter Course Score: ");
                 int courseScore = int.Parse(Console.ReadLine());
 
-                studentGrade =  (courseScore >= 70 && courseScore <= 100) ? "A" :
+                studentGrade = (courseScore >= 70 && courseScore <= 100) ? "A" :
                                 (courseScore >= 60 && courseScore <= 69) ? "B" :
                                 (courseScore >= 50 && courseScore <= 59) ? "C" :
                                 (courseScore >= 45 && courseScore <= 49) ? "D" :
@@ -62,8 +62,8 @@ namespace Blossom_WeekOne_Task
 
                 studentTotalCourseUnit += courseUnit;
                 studentTotalWeightPt += studentWeightPt;
-                studentTotalGradeUnit += studentGradeUnit;
-                
+               // studentTotalGradeUnit += studentGradeUnit;
+
                 string[] courseRecord = new string[] { courseNameAndCode,
                                                        courseUnit.ToString(),
                                                        studentGrade,
@@ -74,15 +74,16 @@ namespace Blossom_WeekOne_Task
                 studentRecords.Add(courseRecord);
             }
 
-                studentGpa = studentTotalWeightPt / studentTotalGradeUnit;
+            studentGpa = studentTotalWeightPt / studentTotalCourseUnit;
 
-                PrintTable.PrintStudentRecords(studentRecords);
-            
-                Console.WriteLine("\n");
-                Console.WriteLine($"Total course Unit Registered is {studentTotalCourseUnit}");
-                Console.WriteLine($"Total course Unit Passed is {studentTotalUnitPassed}");
-                Console.WriteLine($"Total Weight Point is {studentTotalWeightPt}");
-                Console.WriteLine($"Your GPA is = {studentGpa:F2} to 2 decimal places.");
+            PrintTable.PrintStudentRecords(studentRecords);
+
+            Console.WriteLine("\n");
+            Console.WriteLine($"Total course Unit Registered is {studentTotalCourseUnit}");
+            Console.WriteLine($"Total course Unit Passed is {studentTotalUnitPassed}");
+            Console.WriteLine($"Total Weight Point is {studentTotalWeightPt}");
+            Console.WriteLine($"Your GPA is = {studentGpa:F2} to 2 decimal places.");
+
         }
     }
 }

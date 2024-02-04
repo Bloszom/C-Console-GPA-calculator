@@ -16,13 +16,14 @@ namespace Blossom_WeekOne_Task
 
             foreach (string[] courseRecord in studentRecords)
             {
-                Console.WriteLine($"|   {courseRecord[0],-14}|  " +
+                Console.WriteLine($"  |   {courseRecord[0],-14}|  " +
                                     $"  {courseRecord[1],-12}|  " +
                                     $"  {courseRecord[2],-6} |  " +
-                                    $"  {courseRecord[3],-11}| " +
-                                    $"  {courseRecord[4],-11}| " +
-                                    $"  {courseRecord[5],-10}|");
+                                    $"  {courseRecord[3],-11}|  " +
+                                    $"  {courseRecord[4],-11}|  " +
+                                    $"  {courseRecord[5],-10}|  ");
             }
+            Console.WriteLine(" |------------------|-----------------|-----------|---------------|---------------|--------------|");
         }
     }
 }
