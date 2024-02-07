@@ -23,16 +23,18 @@ namespace Blossom_WeekOne_Task
             List<string[]> studentRecords = new List<string[]>();
 
             Console.WriteLine(" Welcome to your GPA calculator\n ");
-            Console.WriteLine("Enter your registered Number of courses: ");
+            Console.WriteLine("Please Enter your registered Number of courses: ");
             int registeredNumberOfCourses = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n");
 
             for (int i = 0; i < registeredNumberOfCourses; i++)
             {
-                Console.WriteLine($"{i + 1}) Enter Course Name and Code:");
+               
+                Console.WriteLine($"{i + 1}) Please enter the Course name & Code:  ");
                 var courseNameAndCode = Console.ReadLine();
-                Console.Write($"{i + 1}) Enter your Course Unit: ");
+                Console.Write($"{i + 1}) Please enter your Course Unit for {courseNameAndCode}:  ");
                 int courseUnit = int.Parse(Console.ReadLine());
-                Console.Write($"{i + 1}) Enter Course Score:");
+                Console.Write($"{i + 1}) Please enter Course Score for {courseNameAndCode}:  ");
                 int courseScore = int.Parse(Console.ReadLine());
                 Console.WriteLine("\n");
 
@@ -65,12 +67,12 @@ namespace Blossom_WeekOne_Task
                 studentTotalWeightPt += studentWeightPt;
                // studentTotalGradeUnit += studentGradeUnit;
 
-                string[] courseRecord = new string[] { courseNameAndCode,
-                                                       courseUnit.ToString(),
-                                                       studentGrade,
-                                                       studentGradeUnit.ToString(),
-                                                       studentWeightPt.ToString(),
-                                                       studentRemark };
+                string[] courseRecord = {   courseNameAndCode,
+                                            courseUnit.ToString(),
+                                            studentGrade,
+                                            studentGradeUnit.ToString(),
+                                            studentWeightPt.ToString(),
+                                            studentRemark };
 
                 studentRecords.Add(courseRecord);
             }
