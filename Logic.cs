@@ -12,13 +12,13 @@ namespace Blossom_WeekOne_Task
         {
             string studentGrade;
             string studentRemark;
-            int studentGradeUnit;
-            int studentWeightPt;
+            double studentGradeUnit;
+            double studentWeightPt;
             // decimal studentTotalGradeUnit = 0;
-            int studentTotalWeightPt = 0;
-            int studentTotalUnitPassed = 0;
-            int studentTotalCourseUnit = 0;
-            decimal studentGpa;
+            double studentTotalWeightPt = 0;
+            double studentTotalUnitPassed = 0;
+            double studentTotalCourseUnit = 0;
+            double studentGpa;
 
             List<string[]> studentRecords = new List<string[]>();
 
@@ -77,7 +77,7 @@ namespace Blossom_WeekOne_Task
                 studentRecords.Add(courseRecord);
             }
 
-            studentGpa = (decimal)studentTotalWeightPt / studentTotalCourseUnit;
+            studentGpa = studentTotalWeightPt / studentTotalCourseUnit;
 
             PrintTable.PrintStudentRecords(studentRecords);
 
@@ -85,7 +85,7 @@ namespace Blossom_WeekOne_Task
             Console.WriteLine($"Total course Unit Registered is {studentTotalCourseUnit}");
             Console.WriteLine($"Total course Unit Passed is {studentTotalUnitPassed}");
             Console.WriteLine($"Total Weight Point is {studentTotalWeightPt}");
-            Console.WriteLine($"Your GPA is = {Math.Round(studentGpa, 2, MidpointRounding.ToEven)} to 2 decimal places.");
+            Console.WriteLine($"Your GPA is = {studentGpa:F2} to 2 decimal places.");
 
         }
     }
