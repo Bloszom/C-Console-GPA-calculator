@@ -9,6 +9,7 @@ namespace Blossom_WeekOne_Task
     {
         static void Main(string[] args)
         {
+            //referencing the main logic behind the application in the main entry point (seperation of concern).
             Logic.LogicMethod();
         }
     }
