@@ -11,12 +11,12 @@ namespace Blossom_WeekOne_Task
         public static void PrintStudentRecords(List<string[]> studentRecords)
         {
             Console.WriteLine(" |------------------|-----------------|-----------|---------------|---------------|--------------|");
-            Console.WriteLine(" | COURSE & CODE    | COURSE UNIT     | GRADE     | GRADE-UNIT    | WEIGHT Pt     | REMARK       |");
+            Console.WriteLine(" |COURSE & CODE     |COURSE UNIT      |GRADE      |GRADE-UNIT     |WEIGHT Pt      |REMARK        |");
             Console.WriteLine(" |------------------|-----------------|-----------|---------------|---------------|--------------|");
 
             foreach (string[] courseRecord in studentRecords)
             {
-                Console.WriteLine($"  |{courseRecord[0],-14}|, {courseRecord[1],-12}|,{courseRecord[2],-6} |, {courseRecord[3],-11}|, {courseRecord[4],-11}|, {courseRecord[5],-10}|  ");
+                Console.WriteLine($" |{courseRecord[0],-18}| {courseRecord[1],-16}|{courseRecord[2],-10} |{courseRecord[3],-14} |{courseRecord[4],-14} |{courseRecord[5],-14}|");
             }
             Console.WriteLine(" |------------------|-----------------|-----------|---------------|---------------|--------------|");
         }

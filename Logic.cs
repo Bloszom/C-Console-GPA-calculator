@@ -14,11 +14,11 @@ namespace Blossom_WeekOne_Task
             string studentRemark;
             int studentGradeUnit;
             int studentWeightPt;
-            int studentTotalGradeUnit = 0;
+            // decimal studentTotalGradeUnit = 0;
             int studentTotalWeightPt = 0;
             int studentTotalUnitPassed = 0;
             int studentTotalCourseUnit = 0;
-            double studentGpa;
+            decimal studentGpa;
 
             List<string[]> studentRecords = new List<string[]>();
 
@@ -28,12 +28,13 @@ namespace Blossom_WeekOne_Task
 
             for (int i = 0; i < registeredNumberOfCourses; i++)
             {
-                Console.WriteLine($"Enter Course Name and Code:");
+                Console.WriteLine($"{i + 1}) Enter Course Name and Code:");
                 var courseNameAndCode = Console.ReadLine();
-                Console.Write($"Enter your Course Unit: ");
+                Console.Write($"{i + 1}) Enter your Course Unit: ");
                 int courseUnit = int.Parse(Console.ReadLine());
-                Console.Write($"Enter Course Score: ");
+                Console.Write($"{i + 1}) Enter Course Score:");
                 int courseScore = int.Parse(Console.ReadLine());
+                Console.WriteLine("\n");
 
                 studentGrade = (courseScore >= 70 && courseScore <= 100) ? "A" :
                                 (courseScore >= 60 && courseScore <= 69) ? "B" :
@@ -74,7 +75,7 @@ namespace Blossom_WeekOne_Task
                 studentRecords.Add(courseRecord);
             }
 
-            studentGpa = studentTotalWeightPt / studentTotalCourseUnit;
+            studentGpa = (decimal)studentTotalWeightPt / studentTotalCourseUnit;
 
             PrintTable.PrintStudentRecords(studentRecords);
 
@@ -82,7 +83,7 @@ namespace Blossom_WeekOne_Task
             Console.WriteLine($"Total course Unit Registered is {studentTotalCourseUnit}");
             Console.WriteLine($"Total course Unit Passed is {studentTotalUnitPassed}");
             Console.WriteLine($"Total Weight Point is {studentTotalWeightPt}");
-            Console.WriteLine($"Your GPA is = {studentGpa:F2} to 2 decimal places.");
+            Console.WriteLine($"Your GPA is = {Math.Round(studentGpa, 2, MidpointRounding.ToEven)} to 2 decimal places.");
 
         }
     }
